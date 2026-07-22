@@ -1,0 +1,6 @@
+{
+  "name": "Nigeria AI Energy Efficiency Advisor",
+  "description": "An AI-powered energy efficiency advisor for households and SMEs in Nigeria that explains consumption patterns, recommends cost-saving equipment upgrades under local grid tariffs, and sizes solar hybrid setups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

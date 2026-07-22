@@ -1,0 +1,37 @@
+{
+  "collections": {
+    "scenarios": {
+      "description": "Saved energy scenarios and audit reports for Nigerian households and SMEs.",
+      "schema": {
+        "name": "string",
+        "createdAt": "timestamp",
+        "params": {
+          "userType": "string",
+          "subType": "string",
+          "state": "string",
+          "disco": "string",
+          "gridBand": "string",
+          "backupType": "string",
+          "fuelPrice": "number",
+          "generatorSizeKva": "number",
+          "generatorHoursDaily": "number",
+          "appliances": "array"
+        },
+        "result": {
+          "monthlyGridKwh": "number",
+          "monthlyGridCost": "number",
+          "monthlyBackupKwh": "number",
+          "monthlyBackupFuelLiters": "number",
+          "monthlyBackupCost": "number",
+          "totalMonthlyKwh": "number",
+          "totalMonthlyCost": "number",
+          "gridCostPercentage": "number",
+          "backupCostPercentage": "number",
+          "applianceSavings": "array",
+          "solarSizing": "object"
+        },
+        "reportText": "string"
+      }
+    }
+  }
+}
