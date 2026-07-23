@@ -214,8 +214,7 @@ This project is developed for **WattSmart Naija**. All rights reserved.
 - [Otun Olayinka](https://github.com/otunolayinka84)
 - [Afolabi Adewale](https://github.com/HademiData)
 - [Doggoh Aondokuma](https://github.com/micaiah-svg)
-- [Esther Adenuga](https://github.com/)
+- [Esther Adenuga](https://github.com/PharmEsther)
 - [Adele Aboaba](https://github.com/Bidemidone1)
 - [](https://github.com/)
-- 
 **
