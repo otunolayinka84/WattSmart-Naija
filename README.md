@@ -1,8 +1,7 @@
 # WattSmart Naija — AI Energy Efficiency Advisor
-
+[Project link](https://wattsmart-naija.ai.studio)
 > **Know your usage, save cost.**  
 > Empowering Nigerian households and SMEs to navigate grid tariff bands, optimize generator running costs, and size solar hybrid systems with data-driven AI intelligence.
-
 ---
 
 ## 📌 Overview
