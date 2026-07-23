@@ -217,3 +217,5 @@ This project is developed for **WattSmart Naija**. All rights reserved.
 - [Esther Adenuga](https://github.com/PharmEsther)
 - [Adele Aboaba](https://github.com/Bidemidone1)
 - [](https://github.com/)
+
+- [Ekundayo Bakare](https://github.com/baker1200)
