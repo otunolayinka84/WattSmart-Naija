@@ -91,6 +91,54 @@ Whether for a 3-bedroom apartment on Band C grid supply or a retail SME running 
 
 ---
 
+## 🧠 AI Model & Architectural Flow
+
+### 1. 🤖 AI Model Used
+- **Primary Foundation Model**: **Google Gemini 2.5 Flash** (`gemini-2.5-flash`) via `@google/genai` SDK.
+- **Key Advantages**:
+  - Ultra-fast token generation speed suitable for interactive web dashboards.
+  - Strict adherence to JSON/Markdown layout schemas and character/word-count boundaries (600–900 words).
+  - High domain reasoning capability for localized Nigerian energy dynamics (NERC DisCo tariffs, generator fuel logistics, and solar payback modeling).
+
+### 2. 📐 AI Architecture Flow
+```
+[User Form / Appliance Manager]
+               │
+               ▼
+   [Deterministic Math Engine]
+     (Pure TypeScript Calculations in energyMath.ts)
+               │  (Raw kWh, ₦ Costs, Fuel Liters, Solar Sizing)
+               ▼
+ [Server-Side Secure Express Proxy] ──▶ (GEMINI_API_KEY Hidden Server-Side)
+      (/api/advisory/audit)
+               │
+               ▼
+ [Structured Prompt Engineering]
+     • NERC Band A-E Constraints
+     • DisCo Pricing Rules
+     • Mandatory Markdown Table Schema
+               │
+               ▼
+   [Google Gemini 2.5 Flash API]
+               │
+               ▼  (Structured Markdown Response)
+    [Frontend Component Layer]
+     (ReactMarkdown + remark-gfm in ReportViewer.tsx)
+               │
+               ▼
+[Custom Styled React Data Tables]
+  • Priority Badges (High, Medium, Low)
+  • Right-aligned Naira (₦) & kWh figures
+  • Responsive borders & alternating rows
+```
+
+### 3. 🛡️ Key Architectural Principles
+1. **Zero Math Hallucinations**: Core financial metrics, energy totals, and solar sizing options are pre-computed mathematically before passing into the LLM context. Gemini is tasked with structural aggregation, advisory narrative, and strategy synthesis—never arithmetic.
+2. **Secure Server-Side API Proxy**: All requests to Google Gemini route through Node/Express API handlers (`/api/advisory/audit` and `/api/advisory/chat`). API credentials never touch the browser DOM.
+3. **Structured Component Mapping**: Markdown output produced by the AI model is dynamically compiled into native React components using `remark-gfm`, transforming raw text tables into styled, responsive tables with priority indicators.
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
